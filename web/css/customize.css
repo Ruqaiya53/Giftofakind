@@ -1,0 +1,942 @@
+.body{
+	font-family: sans-serif;
+	width: 100%;
+	background-color: #ffffff;
+}
+hr{
+	color: #ffffff;
+}
+.more{
+	color: #e53935;
+	text-align: center;
+	padding: 10px;
+	margin:auto;
+}
+/*header*/
+#main_header{
+	width: 100%;
+	height: 6.25em;
+}
+/*logo designing*/
+#logo img{
+	width: 10%;
+	height:	6.25em;
+	float: left;
+	margin-left: 1em;
+}
+/*Search area*/
+#search{
+	width: 650px;
+	float: left;
+	padding: 40px 0px 20px 20px;
+	margin-left: 70px;
+}
+.search-box{
+	width: 640px;
+	height: 50px;
+	background: #fff;
+	border: 1px solid  #626567;
+	border-radius: 5px;
+	color: #5f6a6a; 
+	float: left;
+	padding: 1em;
+}
+.search-btn{
+	width: 70px;
+	height: 50px;
+	border-radius: 5px;
+	border: none;
+	color: #ff3333;
+	background: #626567;
+	margin-left: -70px;
+}
+.search-btn:hover{
+	width: 70px;
+	height: 50px;
+	border-radius: 5px;
+	border: none;
+	color: #4169E1;
+	background: #c0c0c0;
+	margin-left: -70px;
+}
+/*user-menu*/
+#user-menu{
+	width: 30em;
+	height: 4em;
+	float: right;
+	margin-top: 2.75em;
+}
+#user-menu li{
+	display: inline-block;
+	list-style: none;
+	/*padding: 5px 5px;*/
+	margin-right: -15px;
+	color: #e53935;
+}
+#user-menu li:hover{
+	color: #4169E1;
+	transition: 2em; 
+}
+#user-menu a{
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.25em;
+	box-sizing: border-box;
+}
+/*navigation bar*/
+#navigation{
+	box-sizing: border-box;
+	width: 100%;
+	height: 5em;
+	overflow: hidden;
+	background: #e53935; 
+}
+.navigate{
+	width: 80%;
+	margin: 1em auto;
+}
+.navigate a{
+	color: #ffffff;
+	text-decoration: none;
+	margin-top: -1em;
+	margin-left: 1em;
+	margin-right: 1em;
+	padding: 1.25em .75em 1.25em .75em;
+	font-size: 1.35em;
+	float: left;
+}
+/*Mega-menu*/
+.dropdown{
+	float: left;
+	overflow: hidden;
+	margin-top: -1em;
+}
+.dropdown .dropbtn {
+    font-size: 1.25em;    
+    border: none;
+    outline: none;
+    color: #ffffff;
+    margin-left: 1em;
+	margin-right: 1em;
+    padding: 1.25em .75em 1.25em .75em;
+    background-color: inherit;
+}
+.navigate a:hover, .dropdown:hover .dropbtn {
+    color: #626567;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 16px;
+    color: white;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    float: none;
+    color: #e53935;
+    padding: 1em 1em;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content a:hover{
+	color: #4169E1;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    height:	40%;
+    color: black;
+}
+.column a {
+    float: none;
+    color: #e53935;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.column a:hover{
+   color: #4169E1;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.slideshow-container{
+	width: 100%;
+	position: relative;
+	margin: auto;
+}
+.slideshow img{
+	width: 100%;
+	height: 400px;
+}
+/* Next & previous buttons */
+.prev, .next {
+	  cursor: pointer;
+	  position: absolute;
+	  top: 50%;
+	  width: auto;
+	  padding: 16px;
+	  margin-top: -22px;
+	  color: black;
+	  font-weight: bold;
+	  font-size: 20px;
+	  transition: 0.6s ease;
+	  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+	 right: 0;
+	float: right;
+  	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color for prev and next images */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.4);
+  color: #4169E1;
+}
+/*dots for slider*/
+.dot{
+	height: 15px;
+  	width: 15px;
+  	margin: 0 2px;
+  	background-color: #bbb;
+  	border-radius: 50%;
+  	display: inline-block;
+  	transition: background-color 0.6s ease;
+}
+.active{
+  background-color: #717171;
+}
+.container a{
+	text-decoration: none;
+	display: inline-block;
+}
+/*Category/Product/Offer heading*/
+#heading-block{
+	width: 100%;
+	text-align: center;
+	color: #000000;
+	background-color: #ef5350;
+}
+#heading-block h3{
+	line-height: 35px;
+}
+/*category boxes*/
+.categorybox{
+	width: 350px;
+	height: 350px;
+	margin: 0px 15px 10px 30px;
+	padding: 10px 10px 10px 10px;
+	background-color: #ef5350;
+	border: 1px solid rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+.categorybox img{
+	position: relative;
+	width: 328px;
+	height: 327px;
+	float: left;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.categorybox span{
+	position: absolute;
+	width: 328px;
+	height: 40px;
+	line-height: 40px;
+	background: rgba(0,0,0,0.6);
+	color: #ffebee;
+	margin-top: 250px;
+	display: block;
+	z-index: 999;
+	text-align: center;
+}
+.categorybox:hover{
+box-shadow: 0em .5em 1.5em 0em rgba(0,0,0,0.6);
+}
+/*Product category section*/
+.prod-box{
+	width: 400px;
+	height: 430px;
+	overflow: hidden;
+	margin:20px 20px 20px 20px;
+	position: relative;
+	border: 1px solid rgba(0,0,0,0.3);
+	float: left;
+}
+.prod-box img{
+	width: 100%;
+	height: 80%;
+}
+.prod-box p{
+	font-size: 1em;
+	margin-left: 10px;
+	margin-bottom: 0px;
+	color: #000000;
+}
+.prod-box span{
+	margin-left: 10px;
+	color: #ef5350;
+	font-size: 1.25em;
+}
+.prod-trans{
+	background: rgba(255,255,255,0.2);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	position:absolute;
+	opacity: 0;
+	transition: all .5s ease;
+}
+.prod-box:hover .prod-trans{
+	opacity: 1;
+	transition: all .5s ease;
+}
+.prod-feature{
+	width:100%;
+	margin-top: 253px;
+}
+.prod-feature-option1, .prod-feature-option2{    
+    font-size: 1.25em;
+    width:100%;
+    height:35px;
+    margin-left: 0px;
+    border:none;
+    outline: none;
+}
+.prod-feature-option1{
+	float:left;
+	background-color: #ef5350;
+	color: #ffffff;
+}
+.prod-feature-option2{
+	float: right;
+	margin-top: -3px;
+	margin-right: 0px;
+}
+.prod-feature-option1:hover, .prod-feature-option2:hover{
+	cursor:pointer;
+}
+/*-------------footer------------------*/
+#footer{
+	width: 100%;
+	height: 180px;
+	background-color: #f5f5f5;
+	float:left;
+}
+.footer_sub_1{
+	width: 100%;
+	height: 65px;
+	background: #e53935;
+	font-size: 1.5em;
+}
+.footer_sub_1 li{
+	display: inline-block;
+	box-sizing: border-box;
+	width:260px;
+	height: 45px;
+	border: 1px solid rgba(255,255,255,0.3);
+	margin-left: .25em;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: #000000;
+	text-align: center;
+	border-radius: 15px;
+}
+.no1:hover{
+	background-color: #3b5998;
+	color: #ffffff;
+}
+.no2:hover{
+	background-color: #ffc836;
+	color: #ffffff;
+}
+.no3:hover{
+	background-color: #0084b4;
+	color: #ffffff;
+}
+.no4:hover{
+	background-color: #c92228;
+	color: #ffffff;
+}
+.footer_sub_2{
+	width:50%;
+	height:225px;
+	border-bottom:1px solid #000000;
+	float: left;
+	list-style: none;
+}
+.footer_sub_3{
+	width: 50%;
+	height:225px;
+	border-bottom:1px solid #000000;
+	float: left;
+	list-style: none;
+}
+.footer_sub_4{
+	text-align: center;
+}
+
+/*=========================REGISTRATION PAGE=======================*/
+.register{
+	width: 45%;
+	height:630px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	border: 1px solid rgba(0,0,0,0.7);
+	background-color: #ffffff;
+}
+.register h1{
+	margin: auto;
+	margin-top: 20px;
+	color: #e53935;
+	text-align: center;
+}
+.register-form{
+	width: 100%;
+	height: 400px;
+}
+.register-form a{
+	text-decoration: underline;
+}
+.register-form input,select{
+	padding: 12px 20px;
+	margin: 10px 25px;
+	outline: hidden ;
+	display: inline-block;
+	border: 1px solid red;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 1em;
+	background: #ffffff;
+}
+ #link{
+	font-size: 1.25em;
+	margin: 10px 25px;
+	margin-top: 5px;
+	text-decoration: none;
+	color: #e53935;
+}
+ input[type=submit]{
+	width:90%;
+	border: none;
+	border-radius: 10px;
+	background-color: #ef5350;
+	cursor: pointer;
+	transition: .6s;
+}
+#fname, #lname{
+	width:40%;
+}
+#email{
+	width:90%;
+}
+#password, #re-password{
+	width:40%;
+}
+input[type=submit]:hover{
+	background-color: #c0c0c0;
+	transition: .6s;
+}
+#message {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+/*--------------------------login Page----------------*/
+.login{
+	width: 40%;
+	height:325px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+.login h1{
+	margin: auto;
+	margin-top: 20px;
+	color: #e53935;
+	text-align: center;
+}
+.login-system input{
+	padding: 12px 20px;
+	margin: 10px 25px;
+	outline: hidden ;
+	display: inline-block;
+	border: 1px solid red;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 1em;
+	background: #ffffff;
+}
+.login-system input[type=submit]{
+	width:90%;
+	border: none;
+	border-radius: 10px;
+	background-color: #ef5350;
+	cursor: pointer;
+	transition: .6s;
+}
+.login-system input[type=submit]:hover{
+	background-color: #c0c0c0;
+	transition: .6s;
+}
+.login-system a{
+	text-decoration: none;
+	color: #e53935;
+}
+/*-------------------CheckOut-----------------*/
+.row-checkout{
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,.col-50,.col-75 {
+  padding: 0 16px;
+}
+
+.checkout-container {
+  background-color: #ffffff;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid red;
+  border-radius: 3px;
+}
+
+.checkout label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.checkout-btn {
+  background-color: #ef5350;
+  color: #000000;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 17px;
+  transition: .6s;
+}
+
+.checkout-btn:hover {
+  background-color: #c0c0c0;
+  transition: .6s;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+span.price {
+  float: right;
+  color: black;
+}
+/*--------------------Contact Us--------------------*/
+.contactus{
+	width:50%;
+	height: 700px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+.contactus h1{
+	margin-left: 25px;
+	color: #ef5350;
+}
+.contactus input[type=text]{
+	width: 93%;
+	padding: 12px 20px;
+	margin: 10px 25px;
+	outline: hidden ;
+	display: inline-block;
+	border: 1px solid red;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 1em;
+	background: #ffffff;
+}
+.country span{
+	color: #ef5350;
+	font-size: 1.25em;
+	margin-left: 25px
+}
+.country select{
+	width: 93%;
+	padding: 12px 20px;
+	margin: 10px 25px;
+	outline: hidden ;
+	display: inline-block;
+	border: 1px solid red;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 1em;
+	background: #ffffff;
+}
+.text-area{
+	color: #ef5350;
+	font-size: 1.25em;
+	margin-left: 25px;
+}
+#subject{
+	width: 96.5%;
+    padding: 12px;
+    border: 1px solid red;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: vertical;
+    font-size: 1em;
+}
+.submit-contact{
+	width:93%;
+	margin:10px 25px;
+	border: none;
+	padding: 12px;
+	border-radius: 10px;
+	background: #ef5350;
+	transition: .6s;
+}
+.submit-contact:hover{
+	background: #c0c0c0;
+	transition:.6s;
+}
+/*---------------Refunds and Retun Policies----------------*/
+.refunds{
+	width:70%;
+	height:500px;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+.refunds h4, .refunds h5, .refunds p{
+	margin:10px;
+	font-family: verdana;
+}
+.refunds a{
+	text-decoration: underline;
+}
+/*----------------------FAQ's--------------------------------*/
+.faq{
+	width:80%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid black;
+}
+.faq h1{
+	color: #ef5350;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+.question{
+	padding: 10px 20px; 
+}
+.ques{
+	font-size: 1.5em;
+}
+.answer{
+	font-size: 1em;
+}
+.answer a{
+	text-decoration: underline;
+	font-size: 1em;
+}
+/*--------------------About Us----------------------*/
+.about-us{
+	width: 100%;
+	height:905px;
+	margin: auto;
+}
+#about-us-image{
+	width: auto;
+}
+.text{
+	position: relative;
+	width:180px;
+	height: 90px;
+	margin: auto;
+	margin-top: -400px;
+	color: #ffffff;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+.text h1{
+	font-size: 2.5em;
+	margin-left: 10px;
+}
+.aboutcontent{
+	color: #ffffff;
+	font-size: 1.15em;
+	margin: 10px 20px;
+}
+.aboutcontentnext{
+	width:100%;
+	margin-top: 190px;
+}
+.head{
+	width: 100%;
+	height: 60px;
+	margin-top: 20px;
+	text-align: center;
+	color: #ef5350;
+}
+.head span, .part span{
+	color: #4169E1;
+}
+.part{
+	width:31%;
+	float: left;
+	margin: 20px 10px;
+	color: #ef5350;
+}
+.part p{
+	color: #000000;
+	font-size: 18px
+}
+/*-----------------Privacy Policies------------------*/
+.terms{
+width:90%;
+margin:auto;
+border:1px solid black;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+.terms h1{
+	color: #ef5350;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+.terms p,li,a{
+	font-size: 1.15em;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.terms a{
+	text-decoration: underline;
+	color: #4169e1;
+}
+.terms li{
+	margin-top: 10px;
+}
+/*-----------------Product Page---------------------*/
+.prod-display
+{
+	width:100%;
+	height:80%;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	padding:20px;
+	border-top: 1px solid rgba(0,0,0,0.7);
+	border-bottom: 1px solid rgba(0,0,0,0.7);
+}
+.prod-img{
+	width:34%;
+	height:80%;
+	padding: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+	border: 1px solid rgba(0,0,0,0.7);
+}
+.prodimg img{
+	margin: auto;
+	margin-bottom: 15px;
+	box-shadow: 0px 1px 2px 2px rgba(0,0,0,0.3);
+}
+.img-magnifier-container {
+  position:relative;
+}
+.img-magnifier-glass {
+  position: absolute;
+  border: 2px solid rgba(0,0,0,0.4);
+  cursor: crosshair;
+  border-radius:10px;
+  /*Set the size of the magnifier glass:*/
+  width: 250px;
+  height: 175px;
+}
+.prod-details{
+	width: 65%;
+	height:80%;
+	border: 1px solid rgba(0,0,0,0.7);
+	float: right;
+	margin-top: -567px;
+	padding: 20px;
+
+}
+.prod-img, .prod-details{
+	box-shadow: 0px 2px 4px 1px rgba(0,0,0,0.2);
+}
+.prod-details h1{
+	color: #e53935;
+	border-bottom: 1px solid rgba(0,0,0,0.7);
+}
+.prod-details h3{
+	color: #e53935;
+}
+.prod-details p{
+	padding:10px;
+	border-top: 1px solid rgba(0,0,0,0.7);
+	font-size: 16px;
+}
+.prod-details li{
+	font-size: 14px
+}
+/*---------------------------User Home Page-------------------*/
+.user-home{
+	width: auto;
+	height:900px;
+}
+.user-slider img{
+	width: 1350px;
+	height: 431px;
+	border-bottom: 1px solid black;
+}
+.profile{
+	position: absolute;
+	width: 152px;
+	height: 152px;
+	border: 1px solid black;
+	margin: -80px 20px 20px 30px;
+}
+.user-function{
+	position: absolute;
+	width: 70%;
+	height: auto;
+	margin: 17px 10px 10px 140px;
+}
+.user-function li{
+	list-style: none;
+	text-decoration: none;
+	display: inline-block;
+	color: #0097a7;
+	padding:6px;
+	/*border: 1px solid rgba(0,0,0,0.3);*/
+}
+.user-function li:hover{
+	border-bottom: 2px solid #0097a7;
+	transition: linear;
+}
+.now{
+	background-color: rgba(0,0,0,0.6);
+}
+.now:hover{
+	border-bottom: 2px solid #0097a7;
+}
+.user-details{
+	width:70%;
+	margin:auto;
+	margin-top: 100px;
+	font-size: 16px;
+	color: #546e7a;
+}
+.user-details table,tr{
+	padding: 30px;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+/*-----------------------logout----------------*/
+.logout{
+	padding: 20px;
+	margin-top: 100px;
+	color: #0097a7;
+	float: right;
+}
+.done{
+    width: 800px;
+    height: 200px;
+    color: #e53935;
+    padding: 20px;
+    margin: 50px 20px 20px 20px;
+    /*border: 1px solid black;*/
+}
