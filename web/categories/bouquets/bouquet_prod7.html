@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Bunch of 10 Yellow Roses Wrapped in Tissue with Cadbury Celebration</title>
+		<link rel="icon" href="../../images/icon1.ico"/>
+		<link rel="shortcuticon" href="../../images/icon1.ico"/>
+		<link rel="stylesheet" href="../../css/customize.css"/>
+		<link rel="stylesheet" href="../../css/w3.css"/>
+		<link rel="stylesheet" href="../../css/fontawesome-all.min.css">
+		<link rel="stylesheet" href="../../css/fontawesome-all.css">
+		<link rel="stylesheet" href="../../css/fa-brands.min.css">
+		<link rel="stylesheet" href="../../css/fa-brands.css">
+	</head>
+	<body><script>
+function magnify(imgID, zoom) {
+  var img, glass, w, h, bw;
+  img = document.getElementById(imgID);
+  /*create magnifier glass:*/
+  glass = document.createElement("DIV");
+  glass.setAttribute("class", "img-magnifier-glass");
+  /*insert magnifier glass:*/
+  img.parentElement.insertBefore(glass, img);
+  /*set background properties for the magnifier glass:*/
+  glass.style.backgroundImage = "url('" + img.src + "')";
+  glass.style.backgroundRepeat = "no-repeat";
+  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+  bw = 3;
+  w = glass.offsetWidth / 2;
+  h = glass.offsetHeight / 2;
+  /*execute a function when someone moves the magnifier glass over the image:*/
+  glass.addEventListener("mousemove", moveMagnifier);
+  img.addEventListener("mousemove", moveMagnifier);
+  /*and also for touch screens:*/
+  glass.addEventListener("touchmove", moveMagnifier);
+  img.addEventListener("touchmove", moveMagnifier);
+  function moveMagnifier(e) {
+    var pos, x, y;
+    /*prevent any other actions that may occur when moving over the image*/
+    e.preventDefault();
+    /*get the cursor's x and y positions:*/
+    pos = getCursorPos(e);
+    x = pos.x;
+    y = pos.y;
+    /*prevent the magnifier glass from being positioned outside the image:*/
+    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
+    if (x < w / zoom) {x = w / zoom;}
+    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
+    if (y < h / zoom) {y = h / zoom;}
+    /*set the position of the magnifier glass:*/
+    glass.style.left = (x - w) + "px";
+    glass.style.top = (y - h) + "px";
+    /*display what the magnifier glass "sees":*/
+    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+  }
+  function getCursorPos(e) {
+    var a, x = 0, y = 0;
+    e = e || window.event;
+    /*get the x and y positions of the image:*/
+    a = img.getBoundingClientRect();
+    /*calculate the cursor's x and y coordinates, relative to the image:*/
+    x = e.pageX - a.left;
+    y = e.pageY - a.top;
+    /*consider any page scrolling:*/
+    x = x - window.pageXOffset;
+    y = y - window.pageYOffset;
+    return {x : x, y : y};
+  }
+}
+</script>
+		<div id="wrapper">
+			<!--header of homepage-->
+			<div id="header">
+				<div id="main_header">
+					<!--logo-->					
+					<div id="logo">
+						<a href="../../index.html"><img src="../../images/mainlogo.jpg" alt="Company Logo"></a>
+					</div>
+					<!--search_box-->
+					<div id="search">
+						<form action="">
+							<input class="search-box" type="text" name="search" placeholder="Search entire store here&hellip;">
+							<button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+					<!--user menu-->
+					<div id="user-menu">
+						<li><a href="../../login.html"><i class="fa fa-lock"></i>&nbsp;Login</a></li>
+						<li><a href="../../registration.html"><i class="fa fa-user"></i>&nbsp;Register</a></li>		
+						<li><a href="../../checkout.html"><i class="fa fa-shopping-cart"></i>&nbsp;Items</a></li>
+					</div>
+				</div>
+			</div>
+			<div class="prod-display">
+				<div class="prod-img">
+					<div class="prodimg img-magnifier-container">
+						<img src="flower7.jpg" id="myimage" alt="cake" style="width: 400px, height: 400px">
+					</div>
+					<div class="prodsmallimg">
+						<img src="flower7.7.jpg" alt="cake">
+					</div>
+				</div>
+
+				<div class="prod-details">
+					<h1>Bunch of 10 Yellow Roses Wrapped in Tissue with Cadbury Celebration</h1>
+					<h3>Rs.845</h3>
+					<br><br><br><br>
+					<p>Showing the immensity of your love with red roses is a romantic way to make Valentine's Day more beautiful for your partner. This bunch of beautiful red roses is exquisite enough to move your partner like anything. These 10 red blooming beauties look even more stunning in tissue wrapping. Key attributes :
+						<li>Colour of Flower : Red </li>
+						<li>Type of Flowers : Roses </li>
+						<li>No. of Stems : 10 </li>
+					</p>
+					<button class="prod-feature-option1" type="submit"><i class="fa fa-shopping-cart"></i>&nbsp;Add to Cart</button>
+					<button class="prod-feature-option2" type="submit"><i class="fa fa-thumbs-up"></i>&nbsp;Buy Now</button>
+
+				</div>
+			</div>
+			<!--Footer-->
+			<div id="footer">
+				<div class="container">
+					<div class="footer_sub_1">
+						<a href="#"><li class="no1"><i class="fab fa-facebook-f"></i></li></a>
+						<a href="#"><li class="no2"><i class="fab fa-instagram"></i></li></a>
+						<a href="#"><li class="no3"><i class="fab fa-twitter"></i></li></a>
+						<a href="#"><li class="no4"><i class="fab fa-pinterest"></i></li></a>
+					</div>
+					<div class="footer_sub_2">
+						<h3>HELPFUL LINKS</h3>
+						<li><a href="contactus.html">&nbsp;&nbsp;&nbsp;Contact Us</a></li>
+						<li><a href="refunds.html">&nbsp;&nbsp;&nbsp;Refunds and Return Policy</a></li>
+						<li><a href="registration.html">&nbsp;&nbsp;&nbsp;Become Our Vendor?</a></li>
+						<li><a href="faq.html">&nbsp;&nbsp;&nbsp;FAQ</a></li>
+					</div>
+					<div class="footer_sub_3">
+						<h3>INFORMATION</h3>
+						<li><a href="aboutus.html">&nbsp;&nbsp;&nbsp;About Us</a></li>
+						<li><a href="privacypolicy.html">&nbsp;&nbsp;&nbsp;Privacy Policy</a></li>
+					</div>
+					<div class="footer_sub_4">
+						<p>Copyright&nbsp;&copy;&nbsp;2018 Giftofakind.com. All Rights Reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+magnify("myimage", 2);
+</script>
+	</body>
+	</html>
