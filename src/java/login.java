@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author ruqaiya arif
+ * @author ruqaiya rangwala
  */
 public class login extends HttpServlet {
    
