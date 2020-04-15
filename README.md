@@ -8,3 +8,5 @@ User Security module programmed by Sessional Programming.
 Site Flow approach.
 Image Zooming to check Quality created by Javascript.
 Easy Sign-up and Login Modules Structured by SQL.
+
+<img src="Report Images/Screenshots/Capture7.JPG"/>
